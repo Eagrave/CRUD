@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lock-in</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-[#134478] text-[#e9eff1]">
+    <nav class="flex items-center w-full justify-center h-[10vh] border border-b-[9px] border-[#eebe2d]"><h1 class="flex text-[2.8rem] font-bold font-[Oswald] items-center"><img src="coll-removebg-preview.png" alt="Logout" class="max-w-[5vw]"> <a href="index.html">STATE UNIVERSITY</h1></a> </nav>
+
+
+    <div class="main flex w-full">
+        <div class="w-[16vw] border-r-4 border-[#eebe2d] h-full p-2 px-5 min-h-[100vh] bg-[#3a60a6]">
+            <a href="index.html"><h1 class="text-center text-[2.8rem] font-bold font-[Oswald] text-center">DASHBOARD</h1></a> 
+            <a href="enrollment.html"><h3 class="baton text-[2rem] font-[Nunito] mt-[10vh] text-center">Add Student</h3></a>
+            <a href="student-table.html"><h3 class="baton text-[2rem] font-[Nunito] mt-[20vh] text-center">View Students</h3></a>
+            <a href="enrollment.html"><h3 class="baton text-[2rem] font-[Nunito] mt-[20vh] text-center">Settings</h3></a>
+            <a href="login.html"><h3 class="bg-red-500 text-[2rem] font-[Nunito] mt-[20vh] text-center p-3">Logout</h3></a>
+
+        </div>
+    <div class="w-full border border-[3px] border-[#eebe2d] min-h-[100vh] py-2 px-5 ">
+        <h1 class="text-center text-[1.9rem] font-bold font-[Oswald]">ENROLLMENT FORM</h1></a> 
+    <form class="font-[Nunito] text-[1.5rem] mt-5" id="formi">
+    <div class="basic-info">
+        <label class="text-[#e9eff1] text-[1.7rem] " for="name">Full Name:  <input class="text p-1 text-[1.2rem] text-black w-full my-[2vh]" required  type="text" id="name" placeholder="Juan Dela Cruz"></label>
+        <div class="basic-info">
+            <label class="text-[#e9eff1] text-[1.7rem] " for="course">Course:</label>
+            <select class="text p-1 text-black w-full my-[2vh]" id="course" required>
+                <option value="">Select Course</option>
+                <option value="Mechanical Engineering">Mechanical Engineering</option>
+                <option value="Chemical Engineering">Chemical Engineering</option>
+                <option value="Computer Engineering">Computer Engineering</option>
+                <option value="Computer Science">Computer Science</option>
+            </select>
+        </div>
+        <label class="text-[#e9eff1] text-[1.7rem] " for="bday">Date of birth:  <input class="text p-1 text-[1.2rem] text-black w-full my-[2vh]" required type="date" id="bday" placeholder="Software Development Training Program"></label>
+        <label class="text-[#e9eff1] text-[1.7rem] " for="email">Email Address:  <input class="text p-1 text-[1.2rem] text-black w-full my-[2vh]"  required type="email" id="email" placeholder="JuanDelaCruz@gmail.com"></label>
+        <label class="text-[#e9eff1] text-[1.7rem] " for="address">Address:  <input class="text p-1 text-[1.2rem] text-black w-full my-[2vh]"  required type="text" id="address" placeholder="Street name,Barangay,City,Province"></label>
+      <div class="flex w-full justify-evenly items-center mt-[3vh]">
+        <label class="text-[#e9eff1] text-[1.7rem] " for="contact">Contact Number :  <input class="text p-1 text-[1.2rem] text-black w-[15vw] my-[2vh]" type="number" id="contact" placeholder="1234567890"></label>
+       <div><label for="gender">Gender:</label>
+        <input type="radio" id="male" name="gender" value="Male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="Female">
+        <label for="female">Female</label></div>  </div> 
+    </div>
+    <div class="flex w-full justify-center">
+    <button type="Submit" id="submitForm" class="w-[15vw] items-center border border-5 border-[#eebe2d] mt-[5vh] shadow-xl py-3 px-4 tracking-wide rounded-lg text-white bg-blue-600 hover:bg-blue-700 focus:outline-none" id="login">
+        Submit
+      </button></div>
+    </form>
+    </div>
+</div>
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="enrollment.js" defer></script>
+</body>
+</html>

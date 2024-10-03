@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lock-in</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<nav class="flex items-center w-full justify-center h-[10vh] border border-b-[9px] border-[#eebe2d]"><h1 class="flex text-[2.8rem] font-bold font-[Oswald] items-center"><img src="coll-removebg-preview.png" alt="Logout" class="max-w-[5vw]"> <a href="index.html">STATE UNIVERSITY</h1></a> </nav>
+
+<body class="bg-[#134478] text-[#e9eff1]">
+    <div class="main flex w-full">
+        <div class="w-[16vw] border-r-4 border-[#eebe2d] h-full p-2 px-5 min-h-[100vh] bg-[#3a60a6]">
+            <a href="login.html"><h1 class="text-center text-[2.8rem] font-bold font-[Oswald] text-center">DASHBOARD</h1></a> 
+            <a href="enrollment.html"><h3 class="baton text-[2rem] font-[Nunito] mt-[10vh] text-center">Add Student</h3></a>
+            <a href="student-table.html"><h3 class="baton text-[2rem] font-[Nunito] mt-[20vh] text-center">View Students</h3></a>
+            <a href="enrollment.html"><h3 class="baton text-[2rem] font-[Nunito] mt-[20vh] text-center">Settings</h3></a>
+            <a href="index.html"><h3 class="bg-red-500 text-[2rem] font-[Nunito] mt-[20vh] text-center p-3">Logout</h3></a>
+
+        </div>
+    <div class=" w-full border-[3px] border-[#eebe2d] min-h-[100vh]   ">
+        <div class="relative overflow-x-auto shadow-md ">
+            <table class=" table-auto text-sm text-left rtl:text-center text-gray-500 dark:text-gray-400 overflow-hidden">
+                <thead class="text-[1rem]  uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+                    <tr>
+                        <th scope="col" class="px-6 py-2">
+                            Student Name
+                        </th>
+                        <th scope="col" class="px-6 py-2">
+                            Course
+                        </th>
+                        <th scope="col" class="px-6 py-3">
+                            Date of birth
+                        </th>
+                        <th scope="col" class="px-6 py-3">
+                            Email Address
+                        </th>
+                        <th scope="col" class="px-6 py-3">
+                            Address
+                        </th>
+                        <th scope="col" class="px-6 py-3">
+                            Contact Number
+                        </th>
+                        <th scope="col" class="px-6 py-3">
+                            Gender
+                        </th>
+                        <th scope="col" class="px-6 py-3">
+                            Action
+                        </th>
+                    </tr>
+                </thead>
+                <tbody id="studentTableBody" class='bg-white text-black text-[1.2rem]'>
+                     </tbody>
+             
+            </table>
+        </div>
+    </div>
+</div>
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="student.js" defer></script>
+</body>
+</html>

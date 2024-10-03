@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="bg-[#134478] text-[#e9eff1] ">
+<nav class="flex items-center w-full justify-center h-[10vh] border border-b-[9px] border-[#eebe2d]"><h1 class="flex text-[2.8rem] font-bold font-[Oswald] items-center"><img src="coll-removebg-preview.png" alt="Logout" class="max-w-[5vw]"> <a href="index.html">STATE UNIVERSITY</h1></a> </nav>
+
+    <div class="main flex w-full gap-[5vw] ">
+        <div class="w-[14vw] border-r-4 border-[#eebe2d] h-full p-2 px-5 min-h-[100vh] bg-[#3a60a6]">
+            <a href="login.html"><h1 class="text-center text-[2.8rem] font-bold font-[Oswald] text-center">DASHBOARD</h1></a> 
+            <a href="enrollment.html"><h3 class="baton text-[2rem] font-[Nunito] mt-[10vh] text-center">Add Student</h3></a>
+            <a href="student-table.html"><h3 class="baton text-[2rem] font-[Nunito] mt-[20vh] text-center">View Students</h3></a>
+            <a href="enrollment.html"><h3 class="baton text-[2rem] font-[Nunito] mt-[20vh] text-center">Settings</h3></a>
+            <a href="index.html"><h3 class="bg-red-500 text-[2rem] font-[Nunito] mt-[20vh] text-center p-3">Logout</h3></a>
+
+        </div>
+     <div class="flex flex-col">
+        <a href="index.html"><h1 class="text-center text-[3.8rem] font-bold font-[Oswald] text-center">STATISTICS</h1></a> 
+        <div class="flex w-full justify-center">
+        <div class="min-w-[30vw]"><canvas id="genderChart" ></canvas></div>
+        <div class="min-w-[30vw]"> <canvas id="courseChart"></canvas></canvas></div>
+   
+   
+</div>
+<div id="statisticsDiv" class= "grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mx-auto mt-[10vh]">
+    </div>
+    
+  
+    
+</div>  
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="scrpit.js" defer></script>
+    <script src="enrollment.js"></script>
+</body>
+</html>
